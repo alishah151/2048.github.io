@@ -2562,6 +2562,7 @@ window["setjsApp"] = /******/ (function (modules) {
             page: page,
             route: route,
           };
+          console.log("pageData", pageData);
           setbp_kernel_event_manager_js__WEBPACK_IMPORTED_MODULE_4__[
             "default"
           ].raiseEvent(
