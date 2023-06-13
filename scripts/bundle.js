@@ -2854,6 +2854,7 @@ window["setjsApp"] = /******/ (function (modules) {
         }
         function getPage(path) {
           var page;
+          console.log(pages);
           $.each(pages, function (pattern, value) {
             if (RegExp("^" + pattern + "$").test(path)) {
               page = value;
