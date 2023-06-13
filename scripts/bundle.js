@@ -2886,7 +2886,7 @@ window["setjsApp"] = /******/ (function (modules) {
                   setbp_template_component_js__WEBPACK_IMPORTED_MODULE_0__[
                     "default"
                   ]
-                )("./" + folder + "/" + name);
+                )("./2048.github.io/" + folder + "/" + name);
               },
             });
           });
