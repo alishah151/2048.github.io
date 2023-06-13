@@ -2557,6 +2557,7 @@ window["setjsApp"] = /******/ (function (modules) {
             }
           }
 
+          page.templates[0] = "2048.github.io" + page.templates[0];
           pageData = {
             id: id,
             page: page,
