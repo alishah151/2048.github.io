@@ -5198,6 +5198,9 @@ window["setjsApp"] = /******/ (function (modules) {
 
           urls.forEach(function (url) {
             console.log("url", url);
+            if (url.indexOf("templates/")) {
+              url = "./2048.github.io/" + url.substr(2, url.length);
+            }
             $.get(url)
               .done(function (templateStr) {
                 loadTemplates(templateStr);
