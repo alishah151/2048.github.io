@@ -2557,7 +2557,6 @@ window["setjsApp"] = /******/ (function (modules) {
             }
           }
 
-          page.templates[0] = "2048.github.io" + page.templates[0];
           pageData = {
             id: id,
             page: page,
@@ -2808,6 +2807,7 @@ window["setjsApp"] = /******/ (function (modules) {
         var pages = {};
 
         function createComp(_ref) {
+          console.log("_ref", _ref);
           var route = _ref.route;
           return Object(
             setbp_template_component_js__WEBPACK_IMPORTED_MODULE_0__["default"]
@@ -2815,6 +2815,7 @@ window["setjsApp"] = /******/ (function (modules) {
         }
 
         function createCompFunc(template) {
+          console.log("template", template);
           return function () {
             return Object(
               setbp_template_component_js__WEBPACK_IMPORTED_MODULE_0__[
@@ -5196,6 +5197,7 @@ window["setjsApp"] = /******/ (function (modules) {
           }
 
           urls.forEach(function (url) {
+            console.log("url", url);
             $.get(url)
               .done(function (templateStr) {
                 loadTemplates(templateStr);
