@@ -2853,13 +2853,15 @@ window["setjsApp"] = /******/ (function (modules) {
           pages[path] = page;
         }
         function getPage(path) {
-          if (path.indexOf("2048.github.io") > -1) {
-            path = path.substr(14, path.length);
-          }
+          // if (path.indexOf("2048.github.io") > -1) {
+          //   path = path.substr(14, path.length);
+          // }
           var page;
           console.log(pages);
           $.each(pages, function (pattern, value) {
-            if (RegExp("^" + pattern + "$").test(path)) {
+            if (
+              RegExp("^" + pattern + "$").test(path.substr(14, path.length))
+            ) {
               page = value;
               return false;
             }
