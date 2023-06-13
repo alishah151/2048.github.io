@@ -2526,6 +2526,8 @@ window["setjsApp"] = /******/ (function (modules) {
           var progressTimeout;
           unloadPage();
 
+          console.log(page, routess);
+
           if (!page) {
             return notFound();
           }
